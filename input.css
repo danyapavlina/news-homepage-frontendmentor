@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: background-color 0.2s;
+}
+#menu-nav #menu {
+  animation: menu-slide 0.3s;
+}
+#menu-nav #backdrop {
+  animation: backdrop-fade 0.3s;
+}
+
+@keyframes menu-slide {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes backdrop-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
